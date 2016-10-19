@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge" >
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <meta name="renderer" content="webkit" >
+    <title></title>
+
+    <!--引入bootstrap核心css库-->
+    <link rel="stylesheet" href="../../dist/css/bootstrap.min.css" />
+</head>
+<body>
+
+<form class="form-horizontal" role="form">
+
+    <div class="form-group">
+        <label class="col-sm-1 control-label">聚焦</label>
+        <div class="col-sm-9">
+            <input class="form-control" id="focusedInput" typeof="text" value="该输入框获得焦点..." />
+        </div>
+    </div>
+
+    <!---->
+    <div class="form-group">
+        <label for="inputPassword" class="col-sm-1 control-label">禁用</label>
+        <div class="col-sm-9">
+            <input class="form-control" id="disabledInput" type="text" placeholder="该框禁止输入..." disabled />
+        </div>
+    </div>
+
+    <!--禁用输入-->
+    <fieldset disabled>
+        <div class="form-group">
+            <label for="disabledInput" class="col-sm-1 control-label">禁用输入</label>
+            <div class="col-sm-9">
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="禁止输入" />
+            </div>
+        </div>
+
+        <!--禁用选择菜单-->
+        <div class="form-group">
+            <label for="disabledSelect" class="col-sm-1 control-label">禁用选择菜单</label>
+            <div class="col-sm-9">
+                <select id="disabledSelect" class="form-control">
+                    <option>禁用选择</option>
+                </select>
+            </div>
+        </div>
+
+    </fieldset>
+
+    <!--输入成功-->
+    <div class="form-group has-success">
+        <label class="col-sm-1 control-label" for="inputSuccess">输入成功</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputSuccess" />
+        </div>
+    </div>
+
+    <!--输入警告-->
+    <div class="form-group has-warning">
+        <label class="col-sm-1 control-label" for="inputWarning">输入警告</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputWarning" />
+        </div>
+    </div>
+
+    <!--输入错误-->
+    <div class="form-group has-error">
+        <label class="col-sm-1 control-label" for="inputError">输入错误</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputError" />
+        </div>
+    </div>
+
+</form>
+
+<!--引入jquery-->
+<script type="text/javascript" src="../../../jquery2.0.0.min.js"></script>
+<!--bootstrap核心js文件-->
+<script type="text/javascript" src="../../dist/js/bootstrap.min.js"></script>
+</body>
+</html>

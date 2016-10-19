@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge" >
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <meta name="renderer" content="webkit" >
+    <title></title>
+
+    <!--引入bootstrap核心css库-->
+    <link rel="stylesheet" href="../../dist/css/bootstrap.min.css" />
+</head>
+<body>
+
+<div class="dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+        主题
+        <span class="caret"></span>
+    </button>
+    <!--添加pull-right类 使其右对齐-->
+    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">JAVA</a>
+        </li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">
+                数据挖掘
+            </a>
+        </li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">数据通信/网络</a>
+        </li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">分离的链接</a>
+        </li>
+    </ul>
+</div>
+
+<!--引入jquery-->
+<script type="text/javascript" src="../../../jquery2.0.0.min.js"></script>
+<!--bootstrap核心js文件-->
+<script type="text/javascript" src="../../dist/js/bootstrap.min.js"></script>
+</body>
+</html>

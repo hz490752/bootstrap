@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge" >
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <meta name="renderer" content="webkit" >
+    <title>bootstrap</title>
+    <style type="text/css">
+        button.color {
+            color: red;
+        }
+    </style>
+
+    <!--引入bootstrap核心css库-->
+    <link rel="stylesheet" href="../../dist/css/bootstrap.min.css" />
+</head>
+<body>
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default" role="button">Left</a>
+    <a href="#" class="btn btn-default" role="button">Middle</a>
+    <a href="#" class="btn btn-default" role="button">Right</a>
+</div>
+<br />
+<div class="btn-group btn-group-justified" role="menu">
+    <a class="btn btn-default color" href="#">Left</a>
+    <a class="btn btn-default" href="#">Middle</a>
+    <div class="btn-group">
+        <a class="btn btn-default dropdown-toggle" href="#" data-toggle="dropdown">
+            Dropdown
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+            <li>
+                <a href="#">Action</a>
+            </li>
+            <li>
+                <a href="#">Another action</a>
+            </li>
+            <li>
+                <a href="#">Something else here</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">Separated link</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--引入jquery-->
+<script type="text/javascript" src="../../../jquery2.0.0.min.js"></script>
+<!--bootstrap核心js文件-->
+<script type="text/javascript" src="../../dist/js/bootstrap.min.js"></script>
+</body>
+</html>
